@@ -5,6 +5,7 @@ import 'element-ui/lib/theme-chalk/index.css'
 import HelloWorld from '@/components/HelloWorld'
 import haha from '@/components/haha'
 import Home from '@/components/Home'
+import go from '@/components/go'
 
 Vue.use(Router)
 Vue.use(ElementUI)
@@ -25,6 +26,11 @@ export default new Router({
       path: '/Home',
       name: 'Home',
       component: Home
+    },
+    {
+      path: '/go',
+      name: 'go',
+      component: go
     }
   ]
 })
