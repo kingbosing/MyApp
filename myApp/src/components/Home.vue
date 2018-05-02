@@ -2,8 +2,8 @@
 <div class='home'>
     <h1>欢迎来到头条世界</h1>
     <router-link to="/go">去</router-link>
-    <el-button type="primary" v-for="(k,v) in typeList" @click="getType(v)"> {{k}}</el-button>
-    <div class='col'  v-for='item of dataList' @click="toHref(item.url)">
+    <el-button type="primary" v-for="(k,v) in typeList" @click="getType(v)" :key="k"> {{k}}</el-button>
+    <div class='col'  v-for='item of dataList' @click="toHref(item.url)" :key="item">
         <img :src="item.thumbnail_pic_s" alt="">
         <p>{{item.title}}</p>
     </div>

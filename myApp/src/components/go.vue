@@ -1,7 +1,7 @@
 
 <template>
   <div class="Hello">
-    <div v-for='k in 5' class='del'>
+    <div v-for='k in 5' class='del' :key="k">
       <span class='col' v-on:click='get(it,k)' v-for="it in 23" :key="it" :class="setClass(it,k)">{{it}}</span>
     </div>
     <p>{{getNum}}</p>
